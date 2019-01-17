@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <title>Survey</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="survey">
+        <div class="form-group">
+          <label for="name"><h2>Your name:</h2></label>
+          <input id="name" class="form-control" type="text">
+        </div>
+        <label for="music">Your favorite music genre?</label>
+        <select class="form-control" id="music">
+          <option>Rock</option>
+          <option>Pop</option>
+          <option>Metal</option>
+          <option>Alternative</option>
+        </select>
+        <label for="radio">Favorite Ice Cream Flavor?</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="flavor" value="chocolate">
+            Chocolate
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="flavor" value="vanilla">
+            Vanilla
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="flavor" value="cookiesandcream">
+            Cookies and Cream
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="born">When were you born?</label>
+          <input id="born" class="form-control" type="date">
+        </div>
+        <div class="form-group">
+          <label for="color">What is your favorite color?</label>
+          <input id="color" class="form-control" type="color">
+        </div>
+        <button type="submit" class="btn btn-info">Submit</button>
+      </form>
+      <div id="output">
+        <p>Hi <span class="name"></span> , your favorite music genre is <span class="music"></span>, your favorite ice cream flavor is <span class="iceCream"></span>, your were born in <span class="born"></span>, and your favorite color <span class="color"></span>. </p>
+      </div>
+    </div>
+  </body>
+</html>
